@@ -2920,7 +2920,7 @@
           "name": "PGID"
         }
       ],
-      "image": "hotio/sonarr:release",
+      "image": "linuxserver/sonarr:latest",
       "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/sonarr-icon.png",
       "name": "sonarr",
       "platform": "linux",
