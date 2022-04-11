@@ -1,3 +1,5 @@
+
+   
 {
   "version": "2",
   "templates": [
@@ -3472,6 +3474,18 @@
       "volumes": [
         {
           "bind": "/data/portainer/Files/AppData/Config/ZNC",
+          "container": "/config"
+        }
+         ],
+      "image": "ghcr.io/home-assistant/home-assistant:stable",
+      "name": "homeassistant",
+      "platform": "linux",
+      "restart_policy": "unless-stopped",
+      "title": "homeassistant",
+      "type": 1,
+      "volumes": [
+        {
+          "bind": "/data/portainer/Files/AppData/Config/homeassistant",
           "container": "/config"
         }
       ]
